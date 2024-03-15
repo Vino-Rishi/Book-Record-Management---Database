@@ -122,3 +122,20 @@ let dateNew = new Date();
 undefined 
 Math.floor(dateNew/(10006060*24)); 
 19426
+
+MVC -> Architecture
+M - Model (Itt depicts the structure of aMongoDb Collections)
+V - View (With the repesctive to Frontend (React.js))
+C - Controller (Brain or Logical Part of a route)
+
+Schema >> id: String name: String age: Number gender: char || varchar(15)
+
+model >> id: 123 name: DevTown age: 23 gender: 'M'      
+
+Foreing Key:
+
+Referential Integrity
+
+Users Table                    Books Table 
+issuedBook: 3                  issuedbook: 2 (Primary Key)
+(Foreing Key here) 
