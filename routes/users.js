@@ -1,21 +1,25 @@
 const express = require('express');
+const {
+    getAllUsers,
+    } = require('../controllers/user-controllers');
 const { users } = require('../data/users.json');
 const router = express.Router();
+const {UserModel,BookModel} = require('../modals/index');
 
 // Routes and Users
 /**
 *Routes: /users
 *Method: GET
 *Description: Get all users
-*Access : Publi
+*Access : Public
 *Parameters: None
 */
 
-router.get('/users',(req,res)=>{
-    res.status(200).json({
-        data: users,
-    });
-});
+// router.get('/users',(req,res)=>{
+//     res.status(200).json({
+//         data: users,
+//     });
+// });
 
 /**
 *Routes: /users/:id
